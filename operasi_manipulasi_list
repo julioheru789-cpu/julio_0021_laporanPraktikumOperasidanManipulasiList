@@ -1,0 +1,143 @@
+#kumpulan data angka
+print("\n----- data angka -----")
+data_angka = [1,5,2,3]
+print(data_angka)
+
+#kumpulan data string
+print("\n----- data string -----")
+data_string = ["ucup", "adit", "siti"]
+print(data_string)
+
+#kumpulan data boolean
+print("\n----- data boolean -----")
+data_boolean = [True, False, True, False]
+print(data_boolean)
+
+#kumpulan data campuran
+print("\n----- data campuran -----")
+data_campuran = [1, "bakwan", 2, "cireng", "ucup", True, "adit", False]
+print(data_campuran)
+
+#alternatif membuat list
+print("\nalternatif membuat list")
+data_range = range(0,10,2) #range(start,stop,step)
+print(data_range)
+data_list = list(data_range)
+print(data_list)
+
+#membuat list dengan for loop, list comprehension
+print("\nlist comprehension")
+list_for = [i **2 for i in range(1,11)]
+print(list_for)
+
+#membuat list pake for pake if
+print("\nlist pake for pake if")
+list_for_if = [i for i in range(1, 11) if i not in (5,6,7)]
+print(list_for_if)
+
+print("\npake mod 2 == 0")
+list_for_if = [ i for i in range(0,10) if i %2 == 0]
+print(list_for_if)
+
+print("\npake mod 2 != 0")
+list_for_if = [ i for i in range(0,10) if i %2 != 0]
+print(list_for_if)
+
+#operasi list
+print("\noperasi list")
+data = ["ucup", "adit", "dudung"]
+
+#mengambil data dari list
+data_0 = data[0]
+print(f"data pertama (index 0) = {data_0}")
+
+data_1 = data[1]
+print(f"data kedua (index 1) = {data_1}")
+
+data_2 = data[2]
+print(f"data ketiga (index kedua) = {data_2}")
+
+data_terakhir = data[-1]
+print(f"data terakhir adalah {data_terakhir}")
+
+#menambil info jumlah data dalam list
+panjang_data = len(data)
+print(f"panjang data = {panjang_data}")
+
+#manipulasi data list
+
+#data.insert(posisi, item)
+
+data.insert(0,"asep")
+print(f"data sesudah ditambah = \n{data}")
+panjang_data = len(data)
+print(f"panjang data = {panjang_data}")
+
+#menambah item di akhir list
+data.append("ririn")
+print(f"data ditambah lagi = {data}")
+
+#menambahkan list dengan list
+data_baru = ["luffy", "naruto", "itachi"]
+data.extend(data_baru)
+print(f"data semuanya adalah {data}")
+
+#mengubah data
+data[2] = "jarwo"
+print(f"data rubah adalah {data}")
+
+#menghapus data
+data.remove("ucup")
+print(f"data sesudah di remove = {data}")
+
+#menghapus data paling belakang
+data.pop()
+print(f"data setelah dihapus data belakangnya = {data}")
+
+#9.3 operasi list
+print("\n9.3 operasi list")
+data_angka = [8,3,4,1,2,3,3,3,5,6,7,4]
+print(f"data angka = {data_angka}")
+
+#count_data
+jumlah_angka_4 = data_angka.count(4)
+jumlah_angka_3 = data_angka.count(3)
+
+print(f"jumlah angka 4 adalah {jumlah_angka_4}")
+print(f"jumlah angka 3 adalah {jumlah_angka_3}")
+
+#ambil posisi data
+data = ["rendi", "iqbal", "gana", "khairil"]
+
+index_iqbal = data.index("iqbal")
+index_gana = data.index("gana")
+
+print(f"\nindex si iqbal = {index_iqbal}")
+print(f"index si gana = {index_gana}")
+
+#mengurutkan list
+print(f"\ndata sebelum diurutkan = {data_angka}")
+data_angka.sort()
+print(f"data setelah diurutkan = {data_angka}")
+
+print(f"data anggota sebelum diurutkan = {data}")
+data.sort()
+print(f"data setelah diurutkan = {data}")
+
+#balik listnya 
+data_angka.reverse()
+data.reverse()
+print(f"\ndata angka setelah dibalik = {data_angka}")
+print(f"data anggota setelah dibalik = {data}")
+
+#nested list
+print(" 9.3 nested list")
+data_0 = [1,2]
+data_1 = [2,3]
+
+data_list_biasa = [1,2,3,4]
+print(f"list biasa = {data_list_biasa}")
+
+list_2d = [data_0, data_1, 6,7]
+print(f"list 2D = {list_2d}")
+
